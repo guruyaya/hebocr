@@ -1,4 +1,5 @@
 
+
 /***************************************************************************
  *            hocr.h
  *
@@ -54,6 +55,11 @@
 extern "C"
 {
 #endif                          /* __cplusplus */
+
+#ifndef BUILD
+#	define BUILD "Development build"
+#	define VERSION "0.12"
+#endif
 
 /* color image map */
 #include <ho_pixbuf.h>
